@@ -4,7 +4,7 @@ using PayPortal.Core.Application.Enums;
 using PayPortal.Infrastructure.Identity.Entities;
 
 
-namespace PayPortal.Infractructure.Identity.Seeds
+namespace PayPortal.Infrastructure.Identity.Seeds
 {
     public class DefaultAdminUser
     {

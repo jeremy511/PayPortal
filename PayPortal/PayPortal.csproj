@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PayPortal.Core.Application\PayPortal.Core.Application.csproj" />
+    <ProjectReference Include="..\PayPortal.Core.Domain\PayPortal.Core.Domain.csproj" />
+    <ProjectReference Include="..\PayPortal.Infrastructure.Identity\PayPortal.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\PayPortal.Infrastructure.Shared\PayPortal.Infrastructure.Shared.csproj" />
+    <ProjectReference Include="..\PayPortal.Infrastucture.Persistence\PayPortal.Infrastucture.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

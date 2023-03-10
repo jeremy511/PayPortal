@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{2E109391-CBCE-4314-9CB7-B24FEED13623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPortal.Core.Domain", "PayPortal.Core.Domain\PayPortal.Core.Domain.csproj", "{20397293-91F5-406B-943E-2DDE77EB8C39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayPortal.Core.Domain", "PayPortal.Core.Domain\PayPortal.Core.Domain.csproj", "{20397293-91F5-406B-943E-2DDE77EB8C39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPortal.Core.Application", "PayPortal.Core.Application\PayPortal.Core.Application.csproj", "{370B2B86-EE88-4966-9FC1-5F6E90DEE7B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayPortal.Core.Application", "PayPortal.Core.Application\PayPortal.Core.Application.csproj", "{370B2B86-EE88-4966-9FC1-5F6E90DEE7B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPortal.Infrastructure.Identity", "PayPortal.Infrastructure.Identity\PayPortal.Infrastructure.Identity.csproj", "{ADDDCFE8-7745-4B54-8D92-BC22176454CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayPortal.Infrastructure.Identity", "PayPortal.Infrastructure.Identity\PayPortal.Infrastructure.Identity.csproj", "{ADDDCFE8-7745-4B54-8D92-BC22176454CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPortal.Infrastructure.Shared", "PayPortal.Infrastructure.Shared\PayPortal.Infrastructure.Shared.csproj", "{3FAA9FCD-88BF-4B67-A98B-E9A1F5711941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayPortal.Infrastructure.Shared", "PayPortal.Infrastructure.Shared\PayPortal.Infrastructure.Shared.csproj", "{3FAA9FCD-88BF-4B67-A98B-E9A1F5711941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPortal.Infrastucture.Persistence", "PayPortal.Infrastucture.Persistence\PayPortal.Infrastucture.Persistence.csproj", "{52E83F9F-EDFC-434C-AF25-6CFF74009C3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{3FAA9FCD-88BF-4B67-A98B-E9A1F5711941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FAA9FCD-88BF-4B67-A98B-E9A1F5711941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FAA9FCD-88BF-4B67-A98B-E9A1F5711941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E83F9F-EDFC-434C-AF25-6CFF74009C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E83F9F-EDFC-434C-AF25-6CFF74009C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E83F9F-EDFC-434C-AF25-6CFF74009C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E83F9F-EDFC-434C-AF25-6CFF74009C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{370B2B86-EE88-4966-9FC1-5F6E90DEE7B1} = {88D83A2A-8E85-46B3-9FD6-046EF81F2E51}
 		{ADDDCFE8-7745-4B54-8D92-BC22176454CE} = {1F0FBFE3-3B57-4D53-B135-DA5D68DF8AF7}
 		{3FAA9FCD-88BF-4B67-A98B-E9A1F5711941} = {1F0FBFE3-3B57-4D53-B135-DA5D68DF8AF7}
+		{52E83F9F-EDFC-434C-AF25-6CFF74009C3C} = {1F0FBFE3-3B57-4D53-B135-DA5D68DF8AF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BE5B1FA-DF33-4624-B3E7-9193776EC65F}
