@@ -1,4 +1,4 @@
-﻿using InternetBanking.Infrastucture.Persistence.Repositories;
+﻿using PayPortal.Infrastructure.Persistence.Repositories;
 using PayPortal.Core.Application.Interfaces.Repositories;
 using PayPortal.Core.Domain.Entities;
 using PayPortal.Infrastructure.Persistence.Contexts;

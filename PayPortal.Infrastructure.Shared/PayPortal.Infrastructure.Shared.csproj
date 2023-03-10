@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.6.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+    <PackageReference Include="MimeKit" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PayPortal.Core.Application\PayPortal.Core.Application.csproj" />
+    <ProjectReference Include="..\PayPortal.Core.Domain\PayPortal.Core.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

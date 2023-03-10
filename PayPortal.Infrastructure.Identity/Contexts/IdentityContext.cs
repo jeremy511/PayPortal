@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using StockApp.Infrastructure.Identity.Entities;
+using PayPortal.Infrastructure.Identity.Entities;
 
 namespace PayPortal.Infrastructure.Persistence.Contexts
 {
