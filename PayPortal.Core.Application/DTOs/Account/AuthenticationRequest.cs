@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PayPortal.Core.Application.DTOs.Acc
+namespace PayPortal.Core.Application.DTOs
 {
     public class AuthenticationRequest
     {

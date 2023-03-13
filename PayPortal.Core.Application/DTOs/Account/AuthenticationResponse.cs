@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Api_Restaurante.Core.Application.Dtos.Account
+namespace PayPortal.Core.Application.Dtos.Account
 {
     public class AuthenticationResponse
     {

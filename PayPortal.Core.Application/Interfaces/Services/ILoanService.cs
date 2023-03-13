@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayPortal.Core.Application.Interfaces.Services
 {
-    internal class ILoanService
+    public class ILoanService
     {
     }
 }
