@@ -20,6 +20,10 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 var app = builder.Build();
 
+<<<<<<< HEAD
+=======
+#region Inserta dessde los seed el role y el user Manager
+>>>>>>> origin/YanB
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -39,6 +43,10 @@ using (var scope = app.Services.CreateScope())
 
     }
 }
+<<<<<<< HEAD
+=======
+#endregion
+>>>>>>> origin/YanB
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

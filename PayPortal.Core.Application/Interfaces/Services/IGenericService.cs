@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace PayPortal.Core.Application.Interfaces.Services
 {
-    internal interface IGenericService
+    public interface IGenericService<SaveViewModel, ViewModel, Entity>
     {
+        Task<SaveViewModel> AddAsync(SaveViewModel saveView);
+        Task DeleteAsync(int Id);
+        Task<List<ViewModel>> GetAllViewModel();
+        Task<SaveViewModel> GetByIdSaveViewModel(int id);
+        Task<SaveViewModel> UpdateAsync(SaveViewModel saveView, int Id);
     }
 }
