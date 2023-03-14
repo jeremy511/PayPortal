@@ -2,7 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PayPortal.Core.Application.Interfaces.Services;
 using PayPortal.Infrastructure.Identity.Entities;
+using PayPortal.Infrastructure.Identity.Services;
 using PayPortal.Infrastructure.Persistence.Contexts;
 
 namespace StockApp.Infrastructure.Identity
@@ -43,9 +45,9 @@ namespace StockApp.Infrastructure.Identity
      
             #endregion
 
-            #region
+            #region Services
 
-            //services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<IAccountService, AccountService>();
 
             #endregion
 

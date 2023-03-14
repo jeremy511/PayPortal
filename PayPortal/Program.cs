@@ -23,7 +23,11 @@ var app = builder.Build();
 <<<<<<< HEAD
 =======
 #region Inserta dessde los seed el role y el user Manager
+<<<<<<< HEAD
 >>>>>>> origin/YanB
+=======
+
+>>>>>>> bb6f0730b217742127f13314d04494bd47d762c8
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -44,7 +48,11 @@ using (var scope = app.Services.CreateScope())
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> bb6f0730b217742127f13314d04494bd47d762c8
 #endregion
 >>>>>>> origin/YanB
 
