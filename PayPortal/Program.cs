@@ -21,6 +21,7 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 var app = builder.Build();
 
 #region Inserta dessde los seed el role y el user Manager
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -40,6 +41,7 @@ using (var scope = app.Services.CreateScope())
 
     }
 }
+
 #endregion
 
 // Configure the HTTP request pipeline.

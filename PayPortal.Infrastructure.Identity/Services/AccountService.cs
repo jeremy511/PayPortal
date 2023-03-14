@@ -14,17 +14,17 @@ using System.Threading.Tasks;
 
 namespace PayPortal.Infrastructure.Identity.Services
 {
-    public class AccountService
+    public class AccountService : IAccountService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailServices _emailServices;
 
-        public AccountService (UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IEmailServices emailServices)
+        public AccountService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IEmailServices emailServices)
         {
             _userManager = userManager;
-            _signInManager = signInManager; 
-            _emailServices= emailServices;
+            _signInManager = signInManager;
+            _emailServices = emailServices;
         }
 
 
@@ -396,6 +396,6 @@ namespace PayPortal.Infrastructure.Identity.Services
             return response;
         }
         #endregion
- 
+
     }
 }
