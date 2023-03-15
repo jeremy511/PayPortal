@@ -17,9 +17,9 @@ namespace PayPortal.Core.Application.Mapping
                 .ReverseMap();
 
             CreateMap<RegisterRequest, SaveUserViewModel>()
-    .ForMember(x => x.Error, opt => opt.Ignore())
-    .ForMember(x => x.HasError, opt => opt.Ignore())
-    .ReverseMap();
+            .ForMember(x => x.Error, opt => opt.Ignore())
+            .ForMember(x => x.HasError, opt => opt.Ignore())
+            .ReverseMap();
 
             CreateMap<RegisterRequest, EditUserViewModel>()
               .ForMember(x => x.Error, opt => opt.Ignore())

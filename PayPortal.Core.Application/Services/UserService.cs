@@ -1,5 +1,4 @@
 ﻿using PayPortal.Core.Application.Dtos.Account;
-using PayPortal.Core.Application.Interfaces.Services.Account;
 using PayPortal.Core.Application.ViewModels.Users;
 using AutoMapper;
 using PayPortal.Core.Application.Interfaces.Repositories;
@@ -51,7 +50,6 @@ namespace PayPortal.Core.Application.Services
             await _accountService.LogOut();
         }
 
-
         public async Task<List<AdminUserListViewModel>> GetAll()
         {
             return await _accountService.GetAll();
@@ -101,6 +99,7 @@ namespace PayPortal.Core.Application.Services
 
         public async Task<PassUserViewModel> ChangePass(PassUserViewModel vm)
         {
+            
             RegisterRequest request = new();
             request.Password = vm.Password;
             request.Id = vm.Id;

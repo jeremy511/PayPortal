@@ -1,0 +1,84 @@
+﻿@using PayPortal.Core.Application.ViewModels.Users
+@model EditUserViewModel
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+
+<div class="container-fluid">
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-text text-center text-dark">Editando Usuario</h3>
+            </div>
+            <div class="card-body">
+                 @if (ViewBag.HasMessage)
+                    {
+                         if (ViewBag.Message == "Transferencia realizada correctamente!")
+                    {
+                        <div class="alert alert-success alert-dismissible fade show role" role="alert">
+                            <p>@ViewBag.Message</p>
+                            <button type="button" class="btn-close" data-bs-dismiss= "alert" aria-label="Close"></button>
+                        </div>
+                    }
+                    else
+                    {
+                          <div class="alert alert-danger alert-dismissible fade show role" role="alert">
+                            <p>@ViewBag.Message</p>
+                            <button type="button" class="btn-close" data-bs-dismiss= "alert" aria-label="Close"></button>
+                          </div>
+                    }
+                    }
+                 
+                <div class="col-5 offset-8">
+                    <a class="btn btn-outline-success" asp-controller="User" asp-action="ChangePass" asp-route-id="@Model.Id">Editar Contraseña</a>
+                </div>
+
+                <form method="post" asp-action="Edit" asp-controller="User">
+                    <div class="mb-5">
+                        <label asp-for="FirstName" class="form-label">Nombre:</label>
+                        <input class="form-control" asp-for="FirstName" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-5">
+                        <label asp-for="LastName" class="form-label">Apellido:</label>
+                        <input class="form-control" asp-for="LastName" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+
+                    </div>
+                    <div class="mb-5">
+                        <label asp-for="IdCard" class="form-label">Cedula:</label>
+                        <input class="form-control" asp-for="IdCard" />
+                        <span asp-validation-for="IdCard" class="text-danger"></span>
+
+                    </div>
+                    <div class="mb-5">
+                        <label asp-for="Email" class="form-label">Email:</label>
+                        <input class="form-control" asp-for="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                    </div>
+                    <div class="mb-5">
+                        <label asp-for="UserName" class="form-label">Nombre de Usuario:</label>
+                        <input class="form-control" asp-for="UserName" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+
+                    </div>
+                    <input type="text" hidden value="@ViewBag.UserType" asp-for="UserType" />
+                    @if(ViewBag.UserType == "Client") {
+                            <div class="mb-5"  id="id_input">
+                                <label asp-for="AditionalAmount" class="form-label">Monto Adicional</label>
+                                <input class="form-control"  asp-for="AditionalAmount" />
+                                <span asp-validation-for="AditionalAmount" class="text-danger"></span>
+
+                            </div>
+                    }
+
+                    <button class="btn btn-primary" type="submit">Guardar Cambios</button>
+                    <a asp-action="UserAdministration" asp-controller="Admin" class="btn btn-warning">Volver Atras</a>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

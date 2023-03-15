@@ -1,7 +1,7 @@
 ﻿using PayPortal.Core.Application.Helpers;
 using PayPortal.Core.Application.ViewModels.Users;
 
-namespace NewStockApp.Middlewares
+namespace WebApp.PayPortal.Middlewares
 {
     public class ValidateUserSession
     {

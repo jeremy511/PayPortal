@@ -4,6 +4,9 @@ using PayPortal.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Identity;
 using StockApp.Infrastructure.Identity;
 using PayPortal.Infrastructure.Identity.Entities;
+using PayPortal.Core.Application;
+using StockApp.Infrastructure.Shared;
+using WebApp.PayPortal.Middlewares;
 //using PayPortal.Infrastructure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,23 +14,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
-//builder.Services.AddApplicationLayer(builder.Configuration);
+builder.Services.AddApplicationLayer(builder.Configuration);
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
+builder.Services.AddSharedInfrastructure(builder.Configuration);
 builder.Services.AddPersistenceInfrastucture(builder.Configuration);
 builder.Services.AddSession();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-//builder.Services.AddTransient<ValidateUserSession, ValidateUserSession>();
+builder.Services.AddTransient<ValidateUserSession, ValidateUserSession>();
+
 
 var app = builder.Build();
 
-<<<<<<< HEAD
-=======
+ 
 #region Inserta dessde los seed el role y el user Manager
-<<<<<<< HEAD
->>>>>>> origin/YanB
-=======
 
->>>>>>> bb6f0730b217742127f13314d04494bd47d762c8
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -47,14 +47,14 @@ using (var scope = app.Services.CreateScope())
 
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> bb6f0730b217742127f13314d04494bd47d762c8
 #endregion
->>>>>>> origin/YanB
+//<<<<<<< HEAD
+//<<<<<<< HEAD
+//=======
+//=======
+
+//>>>>>>> bb6f0730b217742127f13314d04494bd47d762c8
+//>>>>>>> origin / YanB;
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -66,7 +66,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthentication();
@@ -74,6 +74,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=User}/{action=Index}/{id?}");
 
 app.Run();

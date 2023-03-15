@@ -17,6 +17,8 @@ namespace StockApp.Infrastructure.Shared
         {
             services.Configure<MailSettings>(_config.GetSection("MailSettings"));         
             services.AddTransient<IEmailServices, EmailService>();
+            services.AddScoped<IEmailServices, EmailService>();
+
         }
     }
 }

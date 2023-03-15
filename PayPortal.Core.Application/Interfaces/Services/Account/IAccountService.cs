@@ -1,5 +1,4 @@
 ﻿using PayPortal.Core.Application.Dtos.Account;
-using PayPortal.Core.Application.Dtos.Account;
 using PayPortal.Core.Application.ViewModels.Admin;
 
 namespace PayPortal.Core.Application.Interfaces.Services.Account
